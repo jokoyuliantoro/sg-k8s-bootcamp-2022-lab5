@@ -1,0 +1,14 @@
+=== SG K8s Bootcamp 2022 - Lab5 Commands ===
+
+git clone https://github.com/jokoyuliantoro/sg-k8s-bootcamp-2022-lab5
+
+cp sg-k8s-bootcamp-2022-lab5/* .
+
+nano f5-cis-deployment.yaml
+
+kubectl apply -f f5-cis-deployment.yaml
+
+kubectl describe deployment -n kube-system k8s-bigip-ctlr-deployment
+
+kubectl create -f echo-api-edns.yaml
+
